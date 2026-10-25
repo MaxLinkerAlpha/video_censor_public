@@ -1,0 +1,4 @@
+# YouTube 视频 + 字幕下载依赖
+# 安装: pip install -r requirements.txt
+
+yt-dlp>=2024.0.0          # YouTube 视频/字幕下载

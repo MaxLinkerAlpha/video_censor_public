@@ -1,0 +1,112 @@
+# ============================================================
+# video-censor - Git 忽略规则
+# 严禁提交任何密钥 / 凭据 / 数据 / 媒体 / 日志
+# ============================================================
+
+# -------- Python --------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -------- 虚拟环境 --------
+venv/
+ENV/
+env/
+.venv/
+
+# -------- IDE --------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -------- 敏感配置（绝对不能提交！）--------
+.env
+.env.local
+.env.*.local
+config.yaml
+*_cookies.json
+*_cookies_*.json
+
+# -------- AI 协作工具本地配置 --------
+.trae/
+.cursor/
+.claude/
+
+# -------- 运行时数据（动态生成，不需版本控制）--------
+data/*.xlsx
+data/.prescreen_state.json
+data/scheduler_state.json
+data/.feishu_sync_log.json
+data/ai_parse_errors.log
+data/.proxy_health.json
+data/.proxy_monitor.log
+data/.proxy_state.json
+data/selection_history.json
+data/source_registry.json
+data/run_anchor.json
+core/selection_history.json
+.yt_*.json
+*.csv
+
+# -------- 备份和归档（体积大或历史文件）--------
+archive/
+archives/
+backup*/
+*.backup*
+*_backup*
+*_v*_backup_*
+*.xlsx
+
+# -------- 日志 --------
+*.log
+logs/
+
+# -------- 操作系统 --------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------- 临时文件 --------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+~$*
+
+# -------- 测试输出 --------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# -------- Jupyter Notebook --------
+.ipynb_checkpoints/
+
+# -------- 本地报告（每次运行重新生成）--------
+Total_Review_Report.md
+core/Total_Review_Report.md
+*_report_*.html
+*_report_*.json
+ytdlp_test_report*.json
+video_urls.txt
+video_priority_map.json

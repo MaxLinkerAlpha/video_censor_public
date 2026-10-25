@@ -1,0 +1,6 @@
+# 视频下载输出目录（不提交）
+output/
+
+# 临时 Cookie 转换文件
+cookies.txt
+
